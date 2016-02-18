@@ -1,0 +1,183 @@
+/*Body Styling*/
+body {
+    background: #444;
+    text-align: center;
+    margin-top: 10%;
+    overflow: hidden;
+}
+/* Code for camera */
+#videoCanvas {
+/* Always stretch the canvas to 640x480, regardless of its
+			internal size. */
+    width: 640px;
+    height: 480px;
+}
+
+/* Camera picture */
+.cam {
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+    padding: 10px;
+    border: 2px solid #3EB489;
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+    z-index: 10;
+}
+
+.cam:after {
+    background-color: rgba(0,0,0,0)s;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+/* Title */
+.control {
+    width: 400px;
+    height: 100px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #3EB489;
+    position: fixed;
+    left: 900px;
+    top: 70px;
+    color: #3EB489;
+    font-family: 'Roboto',sans-serif;
+    vertical-align: middle;
+    line-height: 100px;
+    z-index: -1;
+}
+
+/* LED for LED*/
+.led_led {
+    background-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 310px;
+    bottom: 260px;
+}
+
+.led_led:hover {
+    background-color: #98FB98;
+    box-shadow: 0 0 6px #98FB98;
+}
+
+/* Control Panel Box*/
+.control_panel {
+    width: 400px;
+    height: 358px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #3EB489;
+    position: fixed;
+    left: 900px;
+    bottom: 100px;
+    color: #3EB489;
+    font-family: 'Roboto',sans-serif;
+    vertical-align: middle;
+    line-height: 100px;
+    z-index: -1;
+}
+
+/* Forwards */
+.forward {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 60.6px;
+    border-color: transparent transparent #333;
+    position: fixed;
+    bottom: 350px;
+    right: 300px;
+}
+
+.forward:hover {
+    border-color: transparent transparent #98FB98;
+}
+
+/* Left */
+.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 60.6px 35px 0;
+    border-color: transparent #333 transparent transparent;
+    position: fixed;
+    bottom: 250px;
+    right: 390px;
+}
+
+.left:hover {
+    border-color: transparent #98FB98 transparent transparent;
+}
+
+/* Right */
+.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 0 35px 60.6px;
+    border-color: transparent transparent transparent #333;
+    position: fixed;
+    bottom: 250px;
+    right: 220px;
+}
+
+.right:hover {
+    border-color: transparent transparent transparent #98FB98;
+}
+
+/* Backwards */
+.back {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60.6px 35px 0;
+    border-color: #333 transparent transparent;
+    position: fixed;
+    bottom: 160px;
+    right: 300px;
+}
+
+.back:hover {
+    border-color: #98FB98 transparent transparent;
+}
+
+/* Up */
+.up {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 60.6px;
+    border-color: transparent transparent #333;
+    position: fixed;
+    bottom: 290px;
+    right: 100px;
+}
+
+.up:hover {
+    border-color: transparent transparent #98FB98;
+}
+
+/* Down */
+.down {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60.6px 35px 0;
+    border-color: #333 transparent transparent;
+    position: fixed;
+    bottom: 215px;
+    right: 100px;
+}
+
+.down:hover {
+    border-color: #98FB98 transparent transparent;
+}
